@@ -10,8 +10,9 @@
 
 body{
     margin: 0;
-    width: 100%;
     position: absolute;
+    scrollbar-gutter: auto;
+    width:100%
 }
 
 a:hover {
@@ -27,16 +28,15 @@ a:hover {
 
 header{
     background-color: var(--main1);
-    width: 100vw;
     margin: 0;
     box-sizing: border-box;
     flex-direction: row !important;
-    padding: 0 15px;
+    padding: 2vh 3vw;
+    width:100%;
 }
 
 header .textBox{
     background-color: var(--main1);
-    padding: 10px;
     margin:auto;
 }
 
@@ -44,9 +44,9 @@ header .title{
     flex:1;
 }
 
-header .title h1{
+.title h1{
     font-family: "Archivo Black", sans-serif;
-    font-size: 3em;
+    font-size: 4em;
     color: var(--main2);
     margin: auto;
     margin-right: 0;
@@ -54,23 +54,23 @@ header .title h1{
     white-space: nowrap;
 }
 
-header .title h1:first-child{
+.title h1:first-child{
     margin-bottom: 0;
 }
 
-header .title h1:nth-of-type(2){
+.title h1:nth-of-type(2){
     margin-top:0;
 }
 
-header .title h1:nth-of-type(1) span{
+.title h1:nth-of-type(1) span{
     transform: rotate(-7deg);
     display: inline-block;
 }
 
-header .title h1:nth-of-type(2) span{
+/*.title h1:nth-of-type(2) span{
     transform: rotate(7deg);
     display: inline-block;
-}
+}*/
 
 nav{
     flex:4;
@@ -78,9 +78,10 @@ nav{
     overflow: hidden;
     box-sizing: border-box;
     height: 5vw;
-    padding: 0 0 0 15vw;
+    padding: 0 0 0 5vw;
     margin:auto 0 15px 0;
     align-items: flex-end;
+    z-index: 10;
 }
 
 nav a{
@@ -89,7 +90,11 @@ nav a{
     color: var(--main2);
     font-family: "Archivo Black";
     padding: 0 3vw;
-    font-size: 1.5em;
+    font-size: 2em;
+}
+
+nav a:hover{
+    color: var(--grey);
 }
 
 nav a:first-of-type{
@@ -97,6 +102,167 @@ nav a:first-of-type{
 }
 
 nav a img{
-    height: 3vw;
+    height: 1.25em;
     width: auto;
+}
+
+nav.fixed {
+	position: fixed;
+	padding: 3vh 3vw;
+	margin: 0;
+	height: max-content;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	padding-bottom: 15px;
+    background-color: var(--main1);
+}
+
+nav.fixed a:last-of-type{
+    margin-right: auto;
+}
+
+main{
+    background-color: var(--main1);
+    min-height: 100vh;
+    padding: 0 3vw;
+    box-sizing: border-box;
+    width:100%;
+    padding-top: 5vh;
+}
+
+
+main section.titlePics{
+    background-color: var(--main1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.titlePics .row{
+    flex-direction: row !important;
+}
+
+.titlePics .pic{
+    flex:1;
+    padding: 3vw;
+
+}
+
+.titlePics img{
+    image-rendering: optimizeSpeed;
+    width: 100%;
+}
+
+.titlePics .pic p{
+    font-family: "Archivo Black";
+    color: var(--grey);
+    margin: auto;
+    margin-left: 0;
+    padding: 5px 0;
+}
+
+.titlePics .pic p:first-of-type{
+    padding-top: 15px;
+}
+
+.titlePics .pic p:first-of-type::before{
+    display: block;
+    content: "";
+    height:5px;
+    width: 35px;
+    margin: 0 auto 10px 0;
+    background-color: var(--main2);
+}
+
+.titlePics .pic p:last-of-type{
+    font-style: italic;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: var(--main2);
+    padding: 30px 3vw;
+    min-height: 20vh;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--main1);
+    font-family: "Archivo Black";
+}
+footer .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+footer .content div{
+    padding:15px
+}
+
+footer .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+footer .logo .title h1{
+    color:var(--main1)
+}
+
+footer .contactIcons{
+    margin: 0;
+    flex-direction: row !important;
+}
+
+
+footer a.social-img{
+    margin: auto;
+}
+
+footer .social-img img{
+    width: 80px;
+    height: auto;
+}
+
+footer .centerDivider{
+    flex:1;
+}
+
+footer .sitemap{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-size: 1.5em;
+    padding: 40px 15px 40px 0 !important;
+}
+
+footer .sitemap ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+footer .sitemap li{
+    padding: 2px 0;
+    margin: auto;
+}
+
+footer li a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+footer li a:hover{
+    color:var(--grey);
+}
+
+footer .copywrite{
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer .copywrite p{
+    margin: 0 45px;
 }
