@@ -46,3 +46,46 @@ main .content p, main .content li{
 .intrests ul{
     list-style:disc inside;
 }
+
+@media screen and (max-width: 1300px){
+    section.about, section.intrests{
+        flex-direction: column !important;
+    }
+
+    .pic{
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0 !important;
+    }
+
+    .pic img{
+        height: 100% !important;
+        width: auto !important;
+        margin: auto;
+    }
+
+    .pic p{
+        display: none;
+    }
+
+    main div{
+        flex: none;
+    }
+
+    .intrests .pic{
+        display: none;
+    }
+
+    .intrests .content{
+        padding-top:0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 600px){
+}

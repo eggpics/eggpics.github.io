@@ -71,3 +71,20 @@ section.contactImg{
     color: var(--main2);
     border-color: var(--main2);
 }
+
+@media screen and (max-width: 1300px){
+}
+
+@media screen and (max-width: 768px){
+    .titlePics .row{
+        flex-direction: column !important;
+        display: none;
+    }
+
+    .titlePics .row:first-child{
+        display: inherit;
+    }
+}
+
+@media screen and (max-width: 600px){
+}

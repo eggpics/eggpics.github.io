@@ -70,3 +70,54 @@ section .sidePic{
     height: auto;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 1300px){
+}
+
+@media screen and (max-width: 768px){
+    section.row{
+        flex-direction: column-reverse !important;
+    }
+
+    section>div{
+        flex: none !important;
+    }
+
+    .sidePic{
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0 0 30px 0!important;
+    }
+
+    .sidePic img{
+        height: 100% !important;
+        width: auto !important;
+        margin: auto;
+    }
+
+    .content>*{
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+    section .content h1 {
+        color: var(--grey)
+    }
+
+    section .content h2::before {
+        display: none;
+    }
+
+    section .content .social-img{
+        padding:0;
+    }
+
+    section .content .social-img img{
+        padding:0 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+}

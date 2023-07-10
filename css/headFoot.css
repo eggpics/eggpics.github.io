@@ -90,11 +90,14 @@ nav{
     flex-direction: row !important;
     overflow: hidden;
     box-sizing: border-box;
-    height: 5vw;
     padding: 0 0 0 5vw;
     margin:auto 0 15px 0;
     align-items: flex-end;
     z-index: 10;
+}
+
+nav #mobileMenu{
+    display: none;
 }
 
 nav a{
@@ -123,7 +126,7 @@ a#current{
     color: var(--grey);
 }
 
-nav.fixed {
+.fixed nav {
 	position: fixed;
 	padding: 3vh 3vw;
 	margin: 0;
@@ -135,7 +138,7 @@ nav.fixed {
     background-color: var(--main1);
 }
 
-nav.fixed a:last-of-type{
+.fixed nav a:last-of-type{
     margin-right: auto;
 }
 
@@ -245,4 +248,82 @@ footer .copywrite{
 
 footer .copywrite p{
     margin: 0 45px;
+}
+
+@media screen and (max-width: 1300px){
+    header:not(.closed){
+        flex-direction: column-reverse !important;
+    }
+
+    #mobileMenu{
+        margin: 0 0 0 auto;
+    }
+
+    .fixed #mobileMenu, header:not(.closed) #mobileMenu{
+        margin: 0 auto 0 auto;
+    }
+
+    header:not(.closed) nav{
+        flex-direction: column !important;
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    .closed nav a{
+        display: none;
+    }
+
+    nav #mobileMenu{
+        display: inherit;
+    }
+
+    nav a{
+        margin: auto;
+        padding: 7px 0;
+    }
+
+    header{
+        padding: 2vh 5vw;
+    }
+    main section{
+        padding: 0 5vw;
+    }
+
+    footer{
+        padding: 30px 5vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    body{
+        font-size: 12px;
+    }
+    
+    footer .content{
+        flex-direction: column;
+    }
+
+    footer .centerDivider{
+        display: none;
+    }
+
+    footer .sitemap{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 385px){
+    header{
+        flex-direction: column-reverse !important;
+    }
+    #mobileMenu{
+        margin: 0 auto 0 auto !important;
+    }
 }
