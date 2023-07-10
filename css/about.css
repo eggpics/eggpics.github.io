@@ -1,0 +1,48 @@
+main{
+    font-family: "Archivo Black";
+}
+
+main div{
+    flex: 1;
+}
+
+main .pic{
+    padding: 50px;
+    color: var(--grey);
+}
+
+main .pic img{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+main .pic p{
+    font-size: 0.85em;
+    margin: 0;
+    padding-top: 5px;
+}
+
+main .content{
+    color: var(--grey);
+    font-family: "Archivo Black";
+    padding: 50px 0;
+    margin: auto;
+}
+
+main .content h1{
+    font-size: 2.75em;
+}
+
+main .content p, main .content li{
+    font-size: 1.15em;
+    color: var(--main2);
+}
+
+.intrests{
+    flex-direction: row-reverse !important;
+}
+
+.intrests ul{
+    list-style:disc inside;
+}

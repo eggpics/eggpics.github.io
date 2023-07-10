@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Archivo+Black">
+    <link rel="stylesheet" type="text/css" href="fonts/fontawesome/fontawesome.css"></link><!--Icons-->
+    <link rel="stylesheet" type="text/css" href="./css/headFoot.css"></link>
+    <link rel="stylesheet" type="text/css" href="./css/root.css"></link>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"> 
+    <title>Eggcellent Pics</title>
+    <link rel="shortcut icon" href="pics/general/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src = "js/index.js"></script>
+</head>
+
+<body>
+    <header class = flexBox>
+        <div class = "textBox flexBox title">
+            <a href = "./index">
+                <h1>
+                    <span>E</span><span>g</span><span>g</span><span>c</span><span>e</span><span>l</span><span>l</span><span>e</span><span>n</span><span>t</span>
+                </h1>
+                <h1>
+                    <span>P</span><span>i</span><span>c</span><span>s</span>
+                </h1>
+            </a>
+        </div>
+        <nav class = "flexBox">
+            <a href = "./about">About</a>
+            <a>Work</a>
+            <a>Contact</a>
+            <a href = "https://instagram.com/eggcellent_pics" target = "_blank"><img src = "pics/social/instagramYellow.svg" alt = "Instagram"></a>
+            <a href = "https://facebook.com/profile.php?id=100094181783913" target = "_blank"><img src = "pics/social/facebookYellow.svg" alt = "Facebook"></a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class = "titlePics flexBox">
+            <div class = "row flexBox">
+                <div class = "pic flexBox">
+                    <img src = "pics/general/titleImg1.jpg" alr = "Person in front of fireworks on Lake Winnipesaukee">
+                    <p>4th of July Fireworks</p>
+                    <p>Lake Winnipesaukee, NH</p>
+                </div>
+                <div class = "pic flexBox">
+                    <img src = "pics/general/titleImg2.jpg" alt = "R/V Virigia docking in Annapolis harbor">
+                    <p>R/V Virgina</p>
+                    <p>Annapolis, MD</p>
+                </div>
+            </div>
+            <div class = "row flexBox">
+                <div class = "pic flexBox">
+                    <img src = "pics/general/titleImg3.jpg" alt = "Sailboat at anchor in Annapolis harbor">
+                    <p>Safe Harbor</p>
+                    <p>Annapolis, MD</p>
+                </div>
+                <div class = "pic flexBox">
+                    <img src = "pics/general/titleImg4.jpg" alt = "Sunset on Lake Winnipesaukee">
+                    <p>New England Sunset</p>
+                    <p>Lake Winnipesaukee, NH</p>
+                </div>
+            </div>
+        </section>
+        <section class = "contactImg">
+            <div class = "content flexBox">
+                <a href = "contact">Contact Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+		<div class = "content">
+			<div class = "logo">
+                <div class = "textBox flexBox title">
+                    <a href = "index">
+                        <h1>
+                            <span>E</span><span>g</span><span>g</span><span>c</span><span>e</span><span>l</span><span>l</span><span>e</span><span>n</span><span>t</span>
+                        </h1>
+                        <h1>
+                            <span>P</span><span>i</span><span>c</span><span>s</span>
+                        </h1>
+                    </a>
+                </div>
+				<div class="contactIcons flexBox">
+					<a class = "social-img" href = "https://instagram.com/eggcellent_pics" target = "_blank"><img src = "pics/social/instagramBrown.svg" alt = "Instagram"></a>
+                    <a class = "social-img" href = "https://facebook.com/profile.php?id=100094181783913" target = "_blank"><img src = "pics/social/facebookBrown.svg" alt = "Facebook"></a>
+				</div>			
+			</div>
+			<div class = "centerDivider"></div>
+			<div class = "sitemap">
+				<ul class = "flexBox">
+					<li><a href = "./index">Home</a></li>
+					<li><a href = "./about">About</a></li>
+					<li><a href = "images">Work</a></li>
+					<li><a href = "contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class = "copywrite">
+            <p>Not affiliated with or endorced by the DoD, USN, or USNA</p>
+			<p>Eggcellent Pictures</p>
+			<p>&copy2023 Ben Sprague (like egg)</p>
+		</div>
+	</footer>
+</body>

@@ -1,0 +1,72 @@
+main{
+    color: var(--main2);
+    font-family: "Archivo Black";
+}
+
+main section{
+    padding-bottom: 5vh;
+}
+
+section div{
+    padding: 0 30px;
+}
+
+section .content{
+    flex:2;
+}
+
+section .content *{
+    margin: 0;
+}
+
+section .content>*:first-child{
+    margin-top: auto;
+}
+
+section .content>*:last-child{
+    margin-bottom: auto;
+}
+
+section .content h1{
+    font-size: 2.75em;
+    margin-right: auto;
+    padding-bottom: 2vh;
+}
+
+section .content h2{
+    padding-bottom: 1.5vh;
+}
+
+section .content h2::before{
+    content: "";
+    width: 7%;
+    height: 5px;
+    background: var(--main2);
+    display: block;
+    margin-bottom: 5px;
+    box-sizing: content-box;
+}
+
+section .content .social-img{
+    padding: 0 50% 0 10%;
+}
+
+section .content .social-img a{
+    margin: auto;
+}
+
+section .sidePic{
+    flex:1;
+}
+
+.social-img img{
+    width: auto;
+    height: 5cqh;
+    box-sizing: border-box;
+}
+
+.sidePic img{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
