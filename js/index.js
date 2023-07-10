@@ -2,23 +2,20 @@ var contactMaxAlpha = 0.7
 var contactFade = 0.4;
 
 $(document).ready(() => {
-    var altBarShowing = false;
-    if($("nav").attr("class").includes("fixed")){
-        altBarShowing = true;
-    }
+    var altBarShowing = $("header").attr("class").includes("fixed");
 
     $(window).scroll(event => {
         scrollDist = $(window).scrollTop();
         navbarBottom = $("nav").position().top+$("nav").outerHeight(true);
         if(scrollDist > navbarBottom){
             if(!altBarShowing){
-                $("nav").addClass("fixed")
+                $("header").addClass("fixed")
                 altBarShowing = true;
             }
         } 
         else{
             if(altBarShowing){
-                $("nav").removeClass("fixed")
+                $("header").removeClass("fixed")
                 altBarShowing = false;
             }
         }
