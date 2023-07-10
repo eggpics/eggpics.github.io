@@ -8,6 +8,10 @@
 
 }
 
+*{
+    font-family: "Archivo Black", sans-serif;
+}
+
 .row{
     flex-direction: row !important;
 }
@@ -113,6 +117,10 @@ nav a:first-of-type{
 nav a img{
     height: 1.25em;
     width: auto;
+}
+
+a#current{
+    color: var(--grey);
 }
 
 nav.fixed {
