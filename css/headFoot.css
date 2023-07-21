@@ -128,7 +128,7 @@ a#current{
 
 .fixed nav {
 	position: fixed;
-	padding: 3vh 3vw;
+	padding: 1vh 3vw;
 	margin: 0;
 	height: max-content;
 	width: 100%;
@@ -263,7 +263,7 @@ footer .copywrite p{
         margin: 0 auto 0 auto;
     }
 
-    header:not(.fixed):not(.closed) #mobileMenu{
+    header:not(.closed) #mobileMenu{
 	padding-bottom: 37px;
     }
 
@@ -271,6 +271,10 @@ footer .copywrite p{
         flex-direction: column !important;
         padding: 30px 0;
         margin: 0;
+    }
+
+    header.fixed:not(.closed){
+	padding: 1vh 0;
     }
 
     .closed nav a{
