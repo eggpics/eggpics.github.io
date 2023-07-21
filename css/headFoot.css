@@ -261,6 +261,9 @@ footer .copywrite p{
 
     .fixed #mobileMenu, header:not(.closed) #mobileMenu{
         margin: 0 auto 0 auto;
+    }
+
+    header:not(.fixed):not(.closed) #mobileMenu{
 	padding-bottom: 37px;
     }
 
