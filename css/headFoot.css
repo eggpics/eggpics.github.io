@@ -142,6 +142,15 @@ a#current{
     margin-right: auto;
 }
 
+nav a#mobileMenu::after, nav a:last-of-type::after {
+    content: "";
+    background: var(--main2);
+    height: 5px;
+    width: 400%;
+    box-sizing: border-box;
+    margin: 32px 0 0 0;
+}
+
 main{
     box-sizing: border-box;
     width:100%;
