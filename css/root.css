@@ -38,6 +38,16 @@
     font-style: italic;
 }
 
+a.imgLink{
+    display: flex;
+}
+
+@keyframes imageDarken{
+    from {filter: none);}
+    to {filter: brightness(0.6);}
+}
+    
+
 section.contactImg{
     height: 75cqw;
     width: 100%;
