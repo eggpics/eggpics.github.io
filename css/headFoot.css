@@ -273,6 +273,10 @@ footer .copywrite p{
         margin: 0;
     }
 
+    header.fixed:not(.closed){
+	padding: 1vh 0;
+    }
+
     .closed nav a{
         display: none;
     }
