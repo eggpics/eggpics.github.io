@@ -11,6 +11,11 @@
 .titlePics img{
     image-rendering: optimizeSpeed;
     width: 100%;
+    transition: filter 0.1s ease-in
+}
+
+.titlePics img:hover{
+    filter: brightness(0.6)
 }
 
 .titlePics .pic p{
@@ -41,12 +46,6 @@
 a.imgLink{
     display: flex;
 }
-
-@keyframes imageDarken{
-    from {filter: none);}
-    to {filter: brightness(0.6);}
-}
-    
 
 section.contactImg{
     height: 75cqw;
