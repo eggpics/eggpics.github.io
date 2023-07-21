@@ -128,7 +128,7 @@ a#current{
 
 .fixed nav {
 	position: fixed;
-	padding: 3vh 3vw;
+	padding: 1vh 3vw;
 	margin: 0;
 	height: max-content;
 	width: 100%;
