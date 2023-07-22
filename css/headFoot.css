@@ -135,7 +135,11 @@ a#current{
 	left: 0px;
 	top: 0px;
 	padding-bottom: 15px;
-    background-color: var(--main1);
+    	background-color: var(--main1);
+}
+
+header.closed.fixed nav{
+	padding: 1vh 3vw;
 }
 
 .fixed nav a:last-of-type{
@@ -297,26 +301,26 @@ footer .copywrite p{
         padding: 0 5vw;
     }
 
-
     header:not(.closed) nav a#mobileMenu, header:not(.closed) nav a:last-of-type{
     	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	align-items: center;
-}
+    }
 
-header:not(.closed) nav a#mobileMenu::after, header:not(.closed) nav a:last-of-type::after {
-    content: "";
-    background: var(--main2);
-    height: 5px;
-    width: 10vw;
-    box-sizing: border-box;
-    margin: 32px 0 0 0;
-}
+    header:not(.closed) nav a#mobileMenu::after, header:not(.closed) nav a:last-of-type::after {
+    	content: "";
+  	background: var(--main2);
+	height: 5px;
+    	width: 10vw;
+    	box-sizing: border-box;
+    	margin: 32px 0 0 0;
+    }
 
-header:not(.closed) nav a:last-of-type::after {
-    margin: 20px auto 0 auto;
-}
+    header:not(.closed) nav a:last-of-type::after {
+    	margin: 20px auto 0 auto;
+    }
+	
     footer{
         padding: 30px 5vw;
     }
