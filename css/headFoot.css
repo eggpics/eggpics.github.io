@@ -142,15 +142,6 @@ a#current{
     margin-right: auto;
 }
 
-nav a#mobileMenu::after, nav a:last-of-type::after {
-    content: "";
-    background: var(--main2);
-    height: 5px;
-    width: 400%;
-    box-sizing: border-box;
-    margin: 32px 0 0 0;
-}
-
 main{
     box-sizing: border-box;
     width:100%;
@@ -306,6 +297,26 @@ footer .copywrite p{
         padding: 0 5vw;
     }
 
+
+    header:not(.closed) nav a#mobileMenu, header:not(.closed) nav a:last-of-type{
+    	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+header:not(.closed) nav a#mobileMenu::after, header:not(.closed) nav a:last-of-type::after {
+    content: "";
+    background: var(--main2);
+    height: 5px;
+    width: 10vw;
+    box-sizing: border-box;
+    margin: 32px 0 0 0;
+}
+
+header:not(.closed) nav a:last-of-type::after {
+    margin: 20px auto 0 auto;
+}
     footer{
         padding: 30px 5vw;
     }
